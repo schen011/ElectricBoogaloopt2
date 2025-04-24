@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Linq;
 
+
 public class LLMManager : MonoBehaviour
 {
     [SerializeField] private DialogueManager dialogueManager;
@@ -15,8 +16,15 @@ public class LLMManager : MonoBehaviour
     public event Action OnStartTTS;
     public event Action OnSentenceTTS;
 
+    // [SerializeField] private LLMCharacter[] customers;
+
     void Start()
-    {
+    {   
+
+        // int randomNum = UnityEngine.Random.Range(0, customers.Length);
+
+        // llmCharacter = customers[randomNum];
+
         if (llmCharacter == null || transcript == null)
         {
             Debug.LogWarning("Missing components in LLMManager");
