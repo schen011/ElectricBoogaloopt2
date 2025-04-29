@@ -16,20 +16,22 @@ public class LLMManager : MonoBehaviour
     public event Action OnStartTTS;
     public event Action OnSentenceTTS;
 
-    // [SerializeField] private LLMCharacter[] customers;
+    [SerializeField] private LLMCharacter[] customers;
 
     void Start()
     {   
 
-        // int randomNum = UnityEngine.Random.Range(0, customers.Length);
-
-        // llmCharacter = customers[randomNum];
 
         if (llmCharacter == null || transcript == null)
         {
             Debug.LogWarning("Missing components in LLMManager");
             return;
         }
+
+        int randomNum = UnityEngine.Random.Range(0, customers.Length);
+
+        Debug.Log($"Character {randomNum} selected.");
+        llmCharacter = customers[randomNum];
 
         transcript.OnNewPlayerResponse += HandleNewPlayerResponse;
         
@@ -39,7 +41,7 @@ public class LLMManager : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(message))
         {
-            Debug.Log("You Said: " + alToString(targetWord(message)));
+            Debug.Log("-----------------YOU SAID: " + alToString(targetWord(message)) + "-----------------");
 
             // Send message to LLM
             transcript.latestAvatarResponse = "";
@@ -57,7 +59,7 @@ public class LLMManager : MonoBehaviour
 
     void ReplyCompleted()
     {
-        Debug.Log("Avatar Said: " + alToString(targetWord(transcript.latestAvatarResponse)));
+        Debug.Log("-----------------AVATAR SAID: " + alToString(targetWord(transcript.latestAvatarResponse))+"-----------------");
 
 
         // Extract Actions from text
@@ -72,7 +74,7 @@ public class LLMManager : MonoBehaviour
     }
 
     static ArrayList targetWord(string message){
-      string[] menu = {"hotdog", "hot dog", "taco"};
+      string[] menu = {"hotdog", "hot dog", "taco", "fries", "soda"};
       ArrayList saidFood = new ArrayList();
         
         if(menu.Any(message.Contains)){
