@@ -30,7 +30,7 @@ public class LLMManager : MonoBehaviour
 
         int randomNum = UnityEngine.Random.Range(0, customers.Length);
 
-        Debug.Log($"Character {randomNum} selected.");
+        Debug.Log($"Character \"{llmCharacter.AIName}\" ({randomNum}) selected.");
         llmCharacter = customers[randomNum];
 
         transcript.OnNewPlayerResponse += HandleNewPlayerResponse;
@@ -41,8 +41,10 @@ public class LLMManager : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(message))
         {
-            Debug.Log("-----------------YOU SAID: " + alToString(targetWord(message)) + "-----------------");
-
+            if (targetWord(message) != null){
+                Debug.Log("-----------------YOU SAID: " + alToString(targetWord(message)) + "-----------------");
+            }
+           
             // Send message to LLM
             transcript.latestAvatarResponse = "";
             _ = llmCharacter.Chat(message, HandleReply, ReplyCompleted);
@@ -59,9 +61,10 @@ public class LLMManager : MonoBehaviour
 
     void ReplyCompleted()
     {
-        Debug.Log("-----------------AVATAR SAID: " + alToString(targetWord(transcript.latestAvatarResponse))+"-----------------");
-
-
+        if (targetWord(transcript.latestAvatarResponse) != null){
+            Debug.Log("-----------------AVATAR SAID: " + alToString(targetWord(transcript.latestAvatarResponse))+"-----------------");
+        }
+        
         // Extract Actions from text
         transcript.latestAvatarResponse = extractActions(transcript.latestAvatarResponse);
 
