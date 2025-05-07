@@ -21,20 +21,32 @@ public class LLMManager : MonoBehaviour
     void Start()
     {   
 
-
         if (llmCharacter == null || transcript == null)
         {
             Debug.LogWarning("Missing components in LLMManager");
             return;
         }
 
-        int randomNum = UnityEngine.Random.Range(0, customers.Length);
-
-        Debug.Log($"Character \"{llmCharacter.AIName}\" ({randomNum}) selected.");
-        llmCharacter = customers[randomNum];
+        chooseRandomCharacter();
 
         transcript.OnNewPlayerResponse += HandleNewPlayerResponse;
         
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown("c"))
+        {
+            Debug.Log("SWITCHING CHARACTERS");
+            chooseRandomCharacter();
+        }
+    }
+
+    private void chooseRandomCharacter(){
+        int randomNum = UnityEngine.Random.Range(0, customers.Length);
+
+        llmCharacter = customers[randomNum];
+        Debug.Log($"Character \"{llmCharacter.AIName}\" ({randomNum}) selected.");
     }
 
     private void HandleNewPlayerResponse(string message)
@@ -43,6 +55,7 @@ public class LLMManager : MonoBehaviour
         {
             if (targetWord(message) != null){
                 Debug.Log("-----------------YOU SAID: " + alToString(targetWord(message)) + "-----------------");
+                chooseRandomCharacter();
             }
            
             // Send message to LLM
@@ -77,7 +90,8 @@ public class LLMManager : MonoBehaviour
     }
 
     static ArrayList targetWord(string message){
-      string[] menu = {"hotdog", "hot dog", "taco", "fries", "soda"};
+        string[] menu = {"change character", "Change character"};
+    //   string[] menu = {"hotdog", "hot dog", "taco", "fries", "soda"};
       ArrayList saidFood = new ArrayList();
         
         if(menu.Any(message.Contains)){

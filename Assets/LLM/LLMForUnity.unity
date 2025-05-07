@@ -859,7 +859,10 @@ MonoBehaviour:
   stream: 1
   playerName: crashier
   AIName: croid
-  prompt: You just broke up with your girlfriend. you are sad and answer timidly
+  prompt: 'Customer''s name is Croid. The customer just broke up with their girlfriend,
+    is sad and answers timidly.
+
+'
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
@@ -1012,19 +1015,11 @@ MonoBehaviour:
   dontDestroyOnLoad: 1
   contextSize: 64050
   batchSize: 512
-  basePrompt: 'You are a customer at a fast food resturant and you''re ready to place
-    your order. The menu includes hotdogs, fries, burgers, tacos, and soda. You are
-    speaking to the cashier. Short responses.
+  basePrompt: 'A conversation between a cashier and a customer. You are a customer
+    and you are making small talk. Don''t explicitly mention food. Speak in first
+    person. Short responses.
 
-
-    After each response, describe
-    your emotion as either neutral, happy, sad, or mad in parenthesis.
-
-
-    For
-    example:
-
-    I would like to order a burger and 2 fries. (happy)'
+'
   model: llama-3.2-1b-instruct-q4_k_m.gguf
   chatTemplate: llama3 chat
   lora: 
@@ -1226,7 +1221,10 @@ MonoBehaviour:
   stream: 1
   playerName: crashier
   AIName: sasser
-  prompt: You are sassy, incredibly irritable, and hungry.
+  prompt: 'Customer''s name is Sasser. The customer is sassy, incredibly irritable,
+    hungry, and complains about the customer service being horrible.
+
+'
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
@@ -1442,7 +1440,7 @@ MonoBehaviour:
   stream: 1
   playerName: crashier
   AIName: wrath
-  prompt: You are aggressive and mean.
+  prompt: Customer's name is Wrath. The customer is aggressive, mean, and impatient.
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
@@ -1569,8 +1567,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 219173269}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1808,8 +1806,10 @@ MonoBehaviour:
   stream: 1
   playerName: crashier
   AIName: worm
-  prompt: You are very nice, but indecisive. You choose your order after asking for
-    a recommendation from the cashier.
+  prompt: 'Customer''s name is Worm. The customer starts every sentence with "ayo
+    man" and act like a frat bro.
+
+'
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
@@ -1879,8 +1879,9 @@ MonoBehaviour:
   stop: []
   stream: 1
   playerName: crashier
-  AIName: burg
-  prompt: you really like burgers.
+  AIName: Stressor
+  prompt: Customer's name is Stressor. The customer is very stressed and have kids
+    crying in the car as they wait for their order to arrive.
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
