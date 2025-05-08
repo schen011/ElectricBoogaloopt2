@@ -5,40 +5,53 @@ using TMPro;
 
 public class timerScipt : MonoBehaviour
 {
-    public static int score;
 
     public TextMeshProUGUI scoreText;
 
     private bool hasTimeRunOut = false;
 
    [SerializeField] TextMeshProUGUI timerText;
-    [SerializeField]float remainingTime;
+    [SerializeField] static float remainingTime = 60f;
 
 
     void Update()
-{
-    if (remainingTime > 0)
     {
-        remainingTime -= Time.deltaTime;
+        Timer(); 
+    }
 
-        int minutes = Mathf.FloorToInt(remainingTime / 60);
-        int seconds = Mathf.FloorToInt(remainingTime % 60);
-        timerText.text = string.Format("{0:00} : {1:00}", minutes, seconds);
-    }
-    else if (!hasTimeRunOut)
+     public void Timer()
     {
-        remainingTime = 0;
-        hasTimeRunOut = true; // make sure this block only runs once
-        timerText.color = Color.red;
-        timerText.text = "00 : 00";
-        SubtractScore(5);
+            if (remainingTime > 0)
+        {
+            remainingTime -= Time.deltaTime;
+
+            int minutes = Mathf.FloorToInt(remainingTime / 60);
+            int seconds = Mathf.FloorToInt(remainingTime % 60);
+            timerText.text = string.Format("{0:00} : {1:00}", minutes, seconds);
+        }
+        else if (!hasTimeRunOut)
+        {
+            remainingTime = 0;
+            hasTimeRunOut = true; // make sure this block only runs once
+            timerText.color = Color.red;
+            timerText.text = "00 : 00";
+            SubtractScore(5);
+        }
     }
-}
+
+      public void ResetTimer(float newTime)
+    {
+        remainingTime = newTime;
+        hasTimeRunOut = false;
+       timerText.color = Color.white;
+        Debug.Log("reset");
+    }
+
 
     void SubtractScore(int amount)
     {
-        score -= amount;
-        UImanager.instance.UpdateUI(score);
-        scoreText.text = "Score: " + score.ToString(); // update TMP text
+        servePerson.score -= amount;
+        UImanager.instance.UpdateUI();
+        scoreText.text = "Score: " + servePerson.score.ToString(); // update TMP text
     }
 }
