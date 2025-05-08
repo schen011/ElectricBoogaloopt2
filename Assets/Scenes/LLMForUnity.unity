@@ -1295,8 +1295,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 219173269}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1447,6 +1447,7 @@ MonoBehaviour:
   llmCharacter: {fileID: 1668798040}
   transcript: {fileID: 11400000, guid: ab3bca5de692743dbbed2bb8151b7414, type: 2}
   avatar: {fileID: 11400000, guid: 49d68c13539254b62b1c6620a1909693, type: 2}
+  customers: []
 --- !u!1 &1668798038
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,6 +1535,7 @@ MonoBehaviour:
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
+  prompts: []
 --- !u!1 &1798046892
 GameObject:
   m_ObjectHideFlags: 0
