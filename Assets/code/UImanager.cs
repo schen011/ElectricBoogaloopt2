@@ -13,8 +13,8 @@ public class UImanager : MonoBehaviour
         instance = this;
     }
 
-    public void UpdateUI()
+    public void UpdateUI(int score)
     {
-        scoreText.text = "Score : " + servePerson.score;
+        scoreText.text = " " + score;
     }
 }

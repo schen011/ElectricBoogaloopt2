@@ -9,10 +9,6 @@ public class servePerson : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
 
-    public gameFlow gameflow;
-
-    [SerializeField] private timerScipt timerScript;
-
     private void OnTriggerEnter(Collider other)
     {
       food_script data = other.GetComponent<food_script>();
@@ -38,22 +34,33 @@ public class servePerson : MonoBehaviour
             Debug.Log("correct" +" "+ gameFlow.orderTimer);
             AddScore(10);
             CustomerManager.Instance.SellToCustomer();
-            gameflow.NewOrder();
-            timerScript.ResetTimer(gameFlow.orderTimer);   
-
         }
         else
         {
             Debug.Log("incorrect");
             
         }
+
+        // if(gameFlow.orderValue == gameFlow.personValue)
+        // {
+        //     Debug.Log("correct" +" "+ gameFlow.orderTimer);
+        //     AddScore(10);
+        // }
+        // else
+        // {
+        //     Debug.Log("incorrect");
+            
+        // }
     }
+
+
+
 
 
     void AddScore(int amount)
     {
         score += amount;
-        UImanager.instance.UpdateUI();
+        UImanager.instance.UpdateUI(score);
         scoreText.text = "Score: " + score.ToString(); // update TMP text
     }
 
