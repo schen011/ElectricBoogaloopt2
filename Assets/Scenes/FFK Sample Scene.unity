@@ -3873,8 +3873,8 @@ MonoBehaviour:
   stop: []
   stream: 1
   playerName: crashier
-  AIName: sasser
-  prompt: 'Customer''s name is Sasser. The customer is sassy, incredibly irritable,
+  AIName: Bri
+  prompt: 'Customer''s name is Bri. The customer is sassy, incredibly irritable,
     hungry, and complains about the customer service being horrible.
 
 '
@@ -5906,8 +5906,8 @@ MonoBehaviour:
   stop: []
   stream: 1
   playerName: crashier
-  AIName: Stressor
-  prompt: Customer's name is Stressor. The customer is very stressed and have kids
+  AIName: Kaleigh
+  prompt: Customer's name is Kaleigh. The customer is very stressed and have kids
     crying in the car as they wait for their order to arrive.
   setNKeepToPrompt: 1
   chat: []
@@ -6672,8 +6672,8 @@ MonoBehaviour:
   stop: []
   stream: 1
   playerName: crashier
-  AIName: croid
-  prompt: 'Customer''s name is Croid. The customer just broke up with their girlfriend,
+  AIName: Renee
+  prompt: 'Customer''s name is Renee. The customer just broke up with their girlfriend,
     is sad and answers timidly.
 
 '
@@ -26788,6 +26788,7 @@ MonoBehaviour:
   playerName: crashier
   AIName: wrath
   prompt: Customer's name is Wrath. The customer is aggressive, mean, and impatient.
+    Curse, cuss, rant, and complain about everything.
   setNKeepToPrompt: 1
   chat: []
   grammarString: 
@@ -36353,8 +36354,8 @@ MonoBehaviour:
   stop: []
   stream: 1
   playerName: crashier
-  AIName: worm
-  prompt: 'Customer''s name is Worm. The customer starts every sentence with "ayo
+  AIName: Jaden
+  prompt: 'Customer''s name is Jaden. The customer starts every sentence with "ayo
     man" and act like a frat bro.
 
 '

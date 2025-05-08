@@ -14,13 +14,13 @@ public class MicRecorder : MonoBehaviour
     void Update()
     {
         // Start recording when space bar is pressed
-        if (Input.GetKeyDown(KeyCode.Space) && !isRecording && !dialogueManager.avatarSpeaking)
+        if (Input.GetKeyDown(KeyCode.G) && !isRecording && !dialogueManager.avatarSpeaking)
         {
             StartRecording();
         }
 
         // Stop recording
-        if (Input.GetKeyUp(KeyCode.Space) && isRecording)
+        if (Input.GetKeyUp(KeyCode.G) && isRecording)
         {
             StopRecording();
         }

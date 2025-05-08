@@ -12,4 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a19da03f565854a9486c26169d603fe8, type: 3}
   m_Name: DialogueManagerMain
   m_EditorClassIdentifier: 
+  whisper: {fileID: 0}
   playerAudioSource: {fileID: 0}
+  jets: {fileID: 0}
+  avatarAudioSource: {fileID: 0}
+  avatarSpeaking: 0
+  transcript: {fileID: 11400000, guid: ab3bca5de692743dbbed2bb8151b7414, type: 2}

@@ -32,7 +32,7 @@ public class gameFlow : MonoBehaviour
 
         if(orderTimer < 0)
         {
-            Debug.Log("Late");
+            // Debug.Log("Late");
         }
 
     }

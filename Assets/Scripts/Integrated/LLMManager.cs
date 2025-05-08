@@ -42,7 +42,7 @@ public class LLMManager : MonoBehaviour
         }
     }
 
-    private void chooseRandomCharacter(){
+    public void chooseRandomCharacter(){
         int randomNum = UnityEngine.Random.Range(0, customers.Length);
 
         llmCharacter = customers[randomNum];
