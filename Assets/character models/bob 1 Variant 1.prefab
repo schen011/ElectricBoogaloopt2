@@ -103,7 +103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a1e676e58a5e4240897342183d29c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  burger: {fileID: 0}
 --- !u!114 &6060995087179581789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,7 +115,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7af75ea43db78f54cab5dd821e192c72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 4420948654819855152, guid: 97f73f553c9557c4f9dad7964299d98c, type: 3}
+  gameflow: {fileID: 404453399695181393, guid: 6c1ee8d4defd2694f826e54b14bf6dc5, type: 3}
+  timerScript: {fileID: 6466912290520315178, guid: 748c1dd8ae661f54f9871db62c9c2570, type: 3}
 --- !u!65 &8567393917609870674
 BoxCollider:
   m_ObjectHideFlags: 0
