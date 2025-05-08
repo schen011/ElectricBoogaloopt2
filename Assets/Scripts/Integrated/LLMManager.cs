@@ -27,7 +27,7 @@ public class LLMManager : MonoBehaviour
             return;
         }
 
-        chooseRandomCharacter();
+        // chooseRandomCharacter();
 
         transcript.OnNewPlayerResponse += HandleNewPlayerResponse;
         
