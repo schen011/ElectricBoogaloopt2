@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: -5750214011747320001}
   - component: {fileID: -3569400518115100731}
   - component: {fileID: 1117355096536208093}
-  - component: {fileID: 5775027995994391817}
+  - component: {fileID: -723937458588914788}
   m_Layer: 0
   m_Name: Burger_Single_patty
   m_TagString: Food
@@ -435,7 +435,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.113487646, y: 0.02638885, z: 0.112672046}
   m_Center: {x: -0.00017150305, y: 0.013194427, z: 0.0009913128}
---- !u!114 &5775027995994391817
+--- !u!114 &-723937458588914788
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

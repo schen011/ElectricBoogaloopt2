@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,9 @@ public class servePerson : MonoBehaviour
     public gameFlow gameflow;
 
     [SerializeField] private timerScipt timerScript;
+    
+    [SerializeField] private TextMeshProUGUI timerText;
+
 
     private void OnTriggerEnter(Collider other)
     {

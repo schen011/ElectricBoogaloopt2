@@ -186,8 +186,7 @@ GameObject:
   - component: {fileID: 5941488339518153965}
   - component: {fileID: 2559656321648313944}
   - component: {fileID: -2438894468254295021}
-  - component: {fileID: 2967466268269383717}
-  - component: {fileID: 2470690638589311246}
+  - component: {fileID: -6922185871104433435}
   m_Layer: 0
   m_Name: FrenchFries_Red
   m_TagString: Food
@@ -441,20 +440,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.077437915, y: 0.074953645, z: 0.05447457}
   m_Center: {x: 0, y: 0.035862803, z: -0.000000008381903}
---- !u!114 &2967466268269383717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2343565962213859956}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e5ff86b2bc6dac498c2f48cf3d398e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  foodValue: 100
---- !u!114 &2470690638589311246
+--- !u!114 &-6922185871104433435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

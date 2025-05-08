@@ -183,11 +183,10 @@ GameObject:
   - component: {fileID: 5135865593910628645}
   - component: {fileID: 8136202558990360192}
   - component: {fileID: 6272791177535056458}
-  - component: {fileID: 800963465293421171}
-  - component: {fileID: 6131134013543457703}
-  - component: {fileID: 8632267172466715015}
-  - component: {fileID: -2827403995129839272}
-  - component: {fileID: 8823075363404391892}
+  - component: {fileID: 1753216705004449657}
+  - component: {fileID: 6234664345459551657}
+  - component: {fileID: 1291640724306588905}
+  - component: {fileID: 1260652440416283726}
   m_Layer: 0
   m_Name: HotDog
   m_TagString: Food
@@ -266,28 +265,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &800963465293421171
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5480197019551255455}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.1406437, y: 0.036184765, z: 0.028704358}
-  m_Center: {x: 0, y: 0.0011027204, z: -0.0030449377}
---- !u!54 &6131134013543457703
+--- !u!54 &1753216705004449657
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -314,7 +292,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8632267172466715015
+--- !u!65 &6234664345459551657
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5480197019551255455}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1406437, y: 0.036184765, z: 0.028704358}
+  m_Center: {x: 0, y: 0.0011027204, z: -0.0030449377}
+--- !u!114 &1291640724306588905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -436,20 +435,7 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
---- !u!114 &-2827403995129839272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5480197019551255455}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e5ff86b2bc6dac498c2f48cf3d398e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  foodValue: 10
---- !u!114 &8823075363404391892
+--- !u!114 &1260652440416283726
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

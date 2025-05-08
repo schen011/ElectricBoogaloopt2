@@ -13,10 +13,14 @@ public class timerScipt : MonoBehaviour
    [SerializeField] TextMeshProUGUI timerText;
     [SerializeField] static float remainingTime = 60f;
 
-
+    void Start()
+    {
+        remainingTime = 60f;
+    }
+    
     void Update()
     {
-        Timer(); 
+        Timer();
     }
 
      public void Timer()
@@ -25,6 +29,7 @@ public class timerScipt : MonoBehaviour
         {
             remainingTime -= Time.deltaTime;
 
+            timerText.color = Color.white;
             int minutes = Mathf.FloorToInt(remainingTime / 60);
             int seconds = Mathf.FloorToInt(remainingTime % 60);
             timerText.text = string.Format("{0:00} : {1:00}", minutes, seconds);
@@ -43,8 +48,8 @@ public class timerScipt : MonoBehaviour
     {
         remainingTime = newTime;
         hasTimeRunOut = false;
-       timerText.color = Color.white;
         Debug.Log("reset");
+
     }
 
 

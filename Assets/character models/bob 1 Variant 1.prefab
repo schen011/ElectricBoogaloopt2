@@ -85,6 +85,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 148336138335083041, guid: b64f35c671fb4524b872ac66e928b2b0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8567393917609870674}
+    - targetCorrespondingSourceObject: {fileID: 148336138335083041, guid: b64f35c671fb4524b872ac66e928b2b0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -9094158220109976704}
+    - targetCorrespondingSourceObject: {fileID: 148336138335083041, guid: b64f35c671fb4524b872ac66e928b2b0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1116499008015785863}
   m_SourcePrefab: {fileID: 100100000, guid: b64f35c671fb4524b872ac66e928b2b0, type: 3}
 --- !u!1 &6457321186060791424 stripped
 GameObject:
@@ -139,3 +145,39 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 2.0851688, z: 1}
   m_Center: {x: 0, y: 1.0788732, z: 0}
+--- !u!95 &-9094158220109976704
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6457321186060791424}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 65f255f7d6f65479aa085529b144a565, type: 3}
+  m_Controller: {fileID: 9100000, guid: ecd2f0c25c13a419aaab166b73e2214d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1116499008015785863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6457321186060791424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8d34e790ab64d4cbe586eed3ed9c4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HappyParticles: {fileID: 7470809751352933810, guid: b50cd3cfb919ad64390e7da291b15060, type: 3}
+  AngyParticles: {fileID: 8210280084994318273, guid: 3066b03c7f585da47a6c3279d1c6f4b4, type: 3}

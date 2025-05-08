@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 7038280108909176512}
   - component: {fileID: 6197839167992736101}
   - component: {fileID: 8207760479215771055}
-  - component: {fileID: -795053425770479441}
-  - component: {fileID: -1491708618967991635}
-  - component: {fileID: 3614911242436032492}
-  - component: {fileID: -1394361653269615257}
-  - component: {fileID: -5930432189454503089}
+  - component: {fileID: -5744660253619883260}
+  - component: {fileID: 709807685019572717}
+  - component: {fileID: 4935219912448431159}
+  - component: {fileID: -6375401069386048007}
   m_Layer: 0
   m_Name: Juice_Red
   m_TagString: Food
@@ -91,28 +90,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &-795053425770479441
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7703177207443291258}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.06756927, y: 0.15091003, z: 0.06746003}
-  m_Center: {x: -0.000054618344, y: 0.07545502, z: -0.0000000018626451}
---- !u!54 &-1491708618967991635
+--- !u!54 &-5744660253619883260
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,7 +117,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3614911242436032492
+--- !u!65 &709807685019572717
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7703177207443291258}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.06756927, y: 0.15091003, z: 0.06746003}
+  m_Center: {x: -0.000054618344, y: 0.07545502, z: -0.0000000018626451}
+--- !u!114 &4935219912448431159
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -261,20 +260,7 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
---- !u!114 &-1394361653269615257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7703177207443291258}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e5ff86b2bc6dac498c2f48cf3d398e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  foodValue: 1
---- !u!114 &-5930432189454503089
+--- !u!114 &-6375401069386048007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
