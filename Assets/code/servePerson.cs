@@ -16,6 +16,9 @@ public class servePerson : MonoBehaviour
     
     [SerializeField] private TextMeshProUGUI timerText;
 
+     [SerializeField] ParticleSystem HappyParticles = null; // boxes to hold particles
+    [SerializeField] ParticleSystem AngyParticles = null;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -43,12 +46,14 @@ public class servePerson : MonoBehaviour
             AddScore(10);
             CustomerManager.Instance.SellToCustomer();
             gameflow.NewOrder();
-            timerScript.ResetTimer(gameFlow.orderTimer);   
+            timerScript.ResetTimer(gameFlow.orderTimer);
+             HappyCollect();   
 
         }
         else
         {
             Debug.Log("incorrect");
+             AngyCollect();
             
         }
     }
@@ -59,6 +64,21 @@ public class servePerson : MonoBehaviour
         score += amount;
         UImanager.instance.UpdateUI();
         scoreText.text = "Score: " + score.ToString(); // update TMP text
+    }
+
+    public void HappyCollect()
+    {
+    
+        HappyParticles.Play();
+
+
+    }
+
+    public void AngyCollect()
+    {
+
+        AngyParticles.Play();
+
     }
 
 }
